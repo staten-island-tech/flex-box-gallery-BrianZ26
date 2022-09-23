@@ -6,14 +6,17 @@
     margin: 50 auto auto auto;
     background-color: rgb(255,0,0);
 }
-.box{
+.parent{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .child{
+    
+    display: flex;
     border: 2px solid #000;
     padding: 10 10 10 10;
-    margin-top: 10;
-    margin: 10 auto;
+    justify-content:space-between;
+    margin: 10 10;
+    width: auto;
 }
