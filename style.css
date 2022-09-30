@@ -13,10 +13,18 @@
   justify-content: space-around;
   align-self: flex-start;
 }
-.child {
+.box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 10px solid black;
+  width: 50%;
+}
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  box-shadow: 5px 10px #323232;
 }
