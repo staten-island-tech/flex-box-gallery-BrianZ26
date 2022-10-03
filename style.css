@@ -5,7 +5,8 @@
   padding: 50 50 50 50;
   width: 300px;
   margin: 50px auto 50 auto;
-  background-color: rgb(255, 0, 0);
+  background-color: #000);
+  justify-content: space-between;
 }
 .parent {
   display: flex;
@@ -13,18 +14,15 @@
   justify-content: space-around;
   align-self: flex-start;
 }
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-}
 .child {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
+}
+.img {
   width: 50%;
-  box-shadow: 5px 10px #323232;
+  box-shadow: 7px 7px #323232;
+  margin: 50px auto;
 }
