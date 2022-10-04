@@ -13,16 +13,19 @@
   flex-direction: row;
   justify-content: space-around;
   align-self: flex-start;
-}
-.child {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
   flex-wrap: wrap;
 }
 .img {
   width: 50%;
   box-shadow: 7px 7px #323232;
   margin: 50px auto;
+}
+.text{
+  font-size: 2rem;
+  align-self: center;
+}
+.card{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
