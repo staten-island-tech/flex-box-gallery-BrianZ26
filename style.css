@@ -24,7 +24,15 @@ body {
   margin: 50px auto;
   border: solid 10px #537a5a;
   padding: 10 50 30 30;
+  justify-content: space-evenly;
 }
+.box:hover {
+  border: solid 10px #9ae19d;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  background-color: #d1ffd9;
+}
+
 .img {
   width: 100%;
   border: solid 10px #537a5a;
