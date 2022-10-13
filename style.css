@@ -4,12 +4,14 @@ body {
 .header {
   text-align: center;
   align-self: center;
-  border: 5px solid #000;
   padding: 50 50 50 50;
   margin: 50px auto 50 auto;
+  position: relative;
   background-color: #9ae19d;
-  justify-content: space-between;
   box-shadow: 15px 15px #537a5a;
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .parent {
   width: 100%;
@@ -29,8 +31,6 @@ body {
 }
 .box:hover {
   border: solid 10px #9ae19d;
-  transition: all 0.5s;
-  transform: scale(1.05);
   background-color: #d1ffd9;
 }
 .box:hover > p {
@@ -51,7 +51,54 @@ body {
   font-size: 2rem;
   text-align: center;
 }
-
+@keyframes test {
+  0% {
+    background-color: #d1ffd9;
+    left: 0px;
+    top: 0px;
+    box-shadow: 15px 15px #537a5a;
+  }
+  25% {
+    background-color: #9fc2a5;
+    left: 10px;
+    top: 0px;
+    box-shadow: 15px 15px #324936;
+  }
+  50% {
+    background-color: #3d4b40;
+    left: 10px;
+    top: 10px;
+    box-shadow: 15px 15px #2c302e;
+  }
+  75% {
+    background-color: #9fc2a5;
+    left: 0px;
+    top: 10px;
+    box-shadow: 15px 15px #324936;
+  }
+  100% {
+    background-color: #d1ffd9;
+    left: 0px;
+    top: 0px;
+    box-shadow: 15px 15px #537a5a;
+  }
+}
+.plains:hover {
+  transform: translateY(50px);
+  transition-duration: 1s;
+}
+.forest:hover {
+  transform: rotate(1turn);
+  transition-duration: 1s;
+}
+.jungle:hover {
+  transform: scale(0.9);
+  transition-duration: 1s;
+}
+.mountain:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
 p {
   font-size: 1rem;
   text-align: center;
