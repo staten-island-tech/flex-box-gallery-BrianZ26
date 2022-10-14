@@ -2,10 +2,11 @@ body {
   background-color: #909590;
 }
 .header {
+  font-size: 100px;
   text-align: center;
   align-self: center;
-  padding: 50 50 50 50;
-  margin: 50px auto 50 auto;
+  padding: 50 50 80 50;
+  margin: 50px auto 50px auto;
   position: relative;
   background-color: #9ae19d;
   box-shadow: 15px 15px #537a5a;
@@ -28,6 +29,9 @@ body {
   border: solid 10px #537a5a;
   padding: 50 50 50 50;
   justify-content: space-evenly;
+  animation: fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 .box:hover {
   border: solid 10px #9ae19d;
@@ -50,6 +54,14 @@ body {
 .text {
   font-size: 2rem;
   text-align: center;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes test {
   0% {
@@ -77,6 +89,7 @@ body {
     box-shadow: 15px 15px #324936;
   }
   100% {
+    font-size: 100px;
     background-color: #d1ffd9;
     left: 0px;
     top: 0px;
@@ -89,7 +102,7 @@ body {
 }
 .forest:hover {
   transform: rotate(1turn);
-  transition-duration: 1s;
+  transition-duration: 2s;
 }
 .jungle:hover {
   transform: scale(0.9);
