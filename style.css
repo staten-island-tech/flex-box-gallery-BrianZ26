@@ -1,5 +1,6 @@
 body {
-  background-color: #909590;
+  background-image: url(img/Sky.png);
+  background-size: cover;
 }
 .header {
   font-size: 100px;
@@ -13,6 +14,7 @@ body {
   animation-name: test;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  font-size: 100px;
 }
 .parent {
   width: 100%;
@@ -89,7 +91,6 @@ body {
     box-shadow: 15px 15px #324936;
   }
   100% {
-    font-size: 100px;
     background-color: #d1ffd9;
     left: 0px;
     top: 0px;
@@ -111,6 +112,14 @@ body {
 .mountain:hover {
   transform: scale(1.1);
   transition-duration: 1s;
+}
+@media (orientation: portrait), (max-width: 310px) {
+  .box {
+    width: 70%;
+  }
+  .header {
+    font-size: 50px;
+  }
 }
 p {
   font-size: 1rem;
